@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# devC++部分文件的排除 makefile文件这里不排除
+*.layout
+*.dev

@@ -1,6 +1,6 @@
 #include "lanqiao_1389.h"
 int main()
 {
-	Test_1389();
+	Test_1389();//²âÊÔ¶ş·Ö·¨ 
 	return 0;
 } 

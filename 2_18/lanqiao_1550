@@ -1,0 +1,44 @@
+//题目链接：https://www.lanqiao.cn/problems/1550/learning/?page=1&first_category_id=1&problem_id=1550
+#include <iostream>
+using namespace std;
+
+const int N = 105;
+//两个矩阵及结果矩阵的声明
+int a[N][N],b[N][N],c[N][N];
+
+int main()
+{
+  //初始化参数
+  int n,m,k;
+  cin>>n>>m>>k;
+  //初始化矩阵
+  for(int i = 1;i<=n;i++)
+  {
+    for(int j = 1;j<=m;j++)
+    {
+      cin>>a[i][j];
+    }
+  }
+  for(int i = 1;i<=m;i++)
+  {
+    for(int j = 1;j<=k;j++)
+    {
+      cin>>b[i][j];
+    }
+  }
+
+  //开始矩阵的乘法
+  for(int i = 1;i<=n;i++)
+  {
+    for(int j = 1;j<=k;j++)
+    {
+      for(int t = 1;t<=m;t++)
+      {
+        c[i][j]+=a[i][t]*b[t][j];
+      }
+      cout<<c[i][j]<<' ';
+    }
+    cout<<endl;
+  }
+  return 0;
+} 

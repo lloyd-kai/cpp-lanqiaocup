@@ -1,4 +1,4 @@
-//题目链接： 
+//题目链接：https://www.lanqiao.cn/problems/3029/learning/?page=1&first_category_id=1&problem_id=3029
 #include<bits/stdc++.h>
 using namespace std;
 using ll=long long;
